@@ -404,13 +404,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-        ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('💠 ᴄʜᴀɴɴᴇʟ 💠', url='https://t.me/+7TDyeW7IWxcwOWI1'),
+            InlineKeyboardButton('💠 ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ 💠', url='https://t.me/+GSOQyY1lg4I1NjY1')
+            ],[      
+            InlineKeyboardButton('‼️ ʜᴇʟᴘ ‼️', callback_data='help'),
+            InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about'),
+            InlineKeyboardButton('🔔 Download 🔔', url='https://t.me/moviesrequestaccepted')
+            ],[
+            InlineKeyboardButton('✅ ꜱᴜʙꜱᴄʀɪʙᴇ ✅', url='https://www.youtube.com/channel/UCX1CbQN_Pczcawfpz-raO1g')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -418,7 +421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('Piracy Is Crime')
+        await query.answer('Press on Subscribe button')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -438,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
+            InlineKeyboardButton('🤖 Uploads', url='https://t.me/MRAUPLOADS'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
